@@ -1,2 +1,3 @@
 # ALV-OO
 About ALV OO
+This text is used for description the usual ALV OO project structure. ALV OO is a new SAP report technology. The most important changement is that it intorduces how to handle many kinds of local events via ALV OO technology...
