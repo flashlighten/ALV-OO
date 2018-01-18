@@ -15,6 +15,11 @@ CLASS lcl_event_receiver DEFINITION.
             e_object e_interactive,
      "定义用户交互命令
       handle_user_command FOR EVENT user_command OF cl_gui_alv_grid
-        IMPORTING e_ucomm.
+        IMPORTING e_ucomm,
+        
+*Controlling data changes when ALV Grid is editable
+      handle_data_changed
+                    FOR EVENT data_changed OF cl_gui_alv_grid
+        IMPORTING er_data_changed .
         
 ENDCLASS.                    "lcl_event_receiver DEFINITION
